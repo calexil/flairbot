@@ -3,6 +3,7 @@
 # open the EDIT wiki page with the set lists and prepare to run this script and immediately switch the cursopr to the end of the first line
 import pyautogui
 import os
+import praw
 # Set a counter to count the # of exceptions occur
 counter = 0
 
@@ -43,7 +44,7 @@ while True:
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('end')
-
+        counter += 1
 
 # Exception handle when pyautogui can't locate the renew button on the screen
 # or if it clicks away by mistake
